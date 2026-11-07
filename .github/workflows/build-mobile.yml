@@ -35,6 +35,7 @@ jobs:
           npm run build:web
           npx cap add android
           npx cap sync android
+          npx @capacitor/assets generate --android --iconBackgroundColor '#178f83' --splashBackgroundColor '#f3f6f7'
       - name: Build Android APK and App Bundle
         run: |
           cd android
@@ -62,10 +63,11 @@ jobs:
           npm run build:web
           npx cap add ios
           npx cap sync ios
+          npx @capacitor/assets generate --ios --iconBackgroundColor '#178f83' --splashBackgroundColor '#f3f6f7'
       - name: Build unsigned iOS archive
         run: |
           xcodebuild \
-            -workspace ios/App/App.xcworkspace \
+            -project ios/App/App.xcodeproj \
             -scheme App \
             -configuration Release \
             -destination 'generic/platform=iOS' \
