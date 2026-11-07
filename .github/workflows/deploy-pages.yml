@@ -23,6 +23,14 @@ jobs:
     steps:
       - name: Check out the site
         uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Build the web app
+        run: |
+          npm install --no-audit --no-fund
+          npm run build:web
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
         with:
@@ -30,7 +38,7 @@ jobs:
       - name: Upload the app
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: www
       - name: Publish the app
         id: deployment
         uses: actions/deploy-pages@v4

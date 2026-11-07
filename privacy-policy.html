@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f6f7">
+  <title>Privacy Policy — Daylight Weather</title>
+  <style>
+    :root { color-scheme: light dark; --page:#f3f6f7; --surface:#fff; --ink:#172625; --muted:#657370; --accent:#178f83; }
+    @media (prefers-color-scheme:dark) { :root { --page:#101716; --surface:#1c2624; --ink:#eff7f3; --muted:#aab7b2; --accent:#6bd4bd; } }
+    * { box-sizing:border-box; }
+    body { margin:0; padding:40px 18px; background:var(--page); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:700px; margin:auto; padding:clamp(22px,6vw,48px); border-radius:24px; background:var(--surface); }
+    h1 { font-size:clamp(28px,6vw,40px); line-height:1.15; letter-spacing:-.04em; }
+    h2 { margin-top:30px; font-size:19px; }
+    p, li { color:var(--muted); }
+    a { color:var(--accent); }
+    .back { font-size:14px; font-weight:650; text-decoration:none; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="back" href="./">← Daylight Weather</a>
+    <h1>Privacy Policy</h1>
+    <p>Last updated: November 7, 2026</p>
+    <p>Daylight Weather does not require an account and does not operate a server that collects or stores personal information. It does not request access to your device's GPS location, contacts, photos, or microphone.</p>
+
+    <h2>Weather and place searches</h2>
+    <p>When you search for a place, the search text is sent to <a href="https://photon.komoot.io/">Photon</a>, which uses OpenStreetMap data to find matching locations. To show weather, the selected place's coordinates are sent to <a href="https://open-meteo.com/">Open-Meteo</a>. These services receive requests from your device and may process network information such as your IP address under their own privacy policies. Daylight Weather does not receive or retain your IP address.</p>
+    <p>Daylight Weather does not send precise device location: coordinates are only those of the place you choose, or the Chitwan default.</p>
+
+    <h2>Preferences and local storage</h2>
+    <p>Your appearance and accent-color choices are saved in your browser's local storage on your device. They are not sent to Daylight Weather. The app's service worker caches the app shell to support loading it offline; weather and place search require an internet connection.</p>
+
+    <h2>Analytics, advertising, and sharing</h2>
+    <p>Daylight Weather does not include advertising, analytics, account tracking, or in-app purchases. It does not sell personal information.</p>
+
+    <h2>Children</h2>
+    <p>The app does not knowingly collect personal information from children. It does not require an account or ask users to provide personal details.</p>
+
+    <h2>Changes and contact</h2>
+    <p>This policy may be updated when the app changes. Questions or privacy concerns can be reported through the project's <a href="https://github.com/Samir-7ux/daylight-weather/issues">GitHub issue tracker</a>.</p>
+  </main>
+</body>
+</html>

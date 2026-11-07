@@ -1,0 +1,12 @@
+{
+  "appId": "com.samir7ux.daylightweather",
+  "appName": "Daylight Weather",
+  "webDir": "www",
+  "backgroundColor": "#f3f6f7",
+  "ios": {
+    "contentInset": "automatic"
+  },
+  "android": {
+    "backgroundColor": "#f3f6f7"
+  }
+}

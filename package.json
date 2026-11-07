@@ -1,0 +1,20 @@
+{
+  "name": "daylight-weather",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daylight Weather mobile app and installable web app",
+  "scripts": {
+    "build:web": "node scripts/build-web.mjs",
+    "cap:sync": "npm run build:web && cap sync",
+    "cap:add:android": "cap add android",
+    "cap:add:ios": "cap add ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.6.0",
+    "@capacitor/core": "8.6.0",
+    "@capacitor/ios": "8.6.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.6.0"
+  }
+}
